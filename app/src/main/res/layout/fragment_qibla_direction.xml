@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#ffffff"
+              android:orientation="vertical">
+    <include
+            layout="@layout/toolbar_naat_frag"/>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageView
+                android:id="@+id/main_image_dial"
+                android:layout_width="190dp"
+                android:layout_height="190dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:paddingTop="5sp"
+                android:src="@drawable/dailbackground" />
+
+        <ImageView
+                android:id="@+id/dialView"
+                android:layout_width="270dp"
+                android:layout_height="270dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/dail_gray" />
+
+        <ImageView
+                android:id="@+id/main_image_hands"
+                android:layout_width="15dp"
+                android:layout_height="180dp"
+                android:layout_alignBottom="@+id/main_image_dial"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/niddle" />
+
+        <ImageView
+                android:id="@+id/kabaImageView"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_above="@+id/dialView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="26dp"
+                android:src="@drawable/kaba_gray" />
+
+        <TextView
+                android:id="@+id/heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dialView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10sp"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+        <TextView
+                android:id="@+id/headingTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/heading"
+                android:layout_centerHorizontal="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000"
+                android:textSize="28sp"
+                android:visibility="invisible" />
+
+        <TextView
+                android:id="@+id/displacementTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:visibility="invisible" />
+
+    </RelativeLayout>
+
+</LinearLayout>

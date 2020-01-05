@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#142848</color>
+    <color name="colorPrimaryDark">#061e33</color>
+    <color name="colorAccent">#142848</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="appColor">#fdfdfe</color>
+    <color name="colorGray">#BABABA</color>
+    <color name="colorDarkGray">#818181</color>
+    <color name="colorBlueGray">#8896A1</color>
+    <color name="colorLightBlueGray">#E3E7EA</color>
+    <color name="colorLightBlue">#03A9F4</color>
+    <color name="colorRed">#FF0000</color>
+    <color name="colorRedGradient">#310000</color>
+    <color name="colorGreen">#008000</color>
+    <color name="colorYellow">#ffff00</color>
+    <color name="color_rating_grey">#d3d3d3</color>
+    <color name="color_rating_gold">#ffc200</color>
+    <color name="colorOrange">#FF5722</color>
+    <color name="transparency">#00ffffff</color>
+    <color name="color_deep_blue">#061e33</color>
+    <color name="color_deep_blue_dark">#030f1a</color>
+    <color name="color_black">#000000</color>
+    <color name="color_settings_one">#F2F3F0</color>
+    <color name="color_settings_two">#EEF1E6</color>
+    <color name="dialogTranslucent">#881400FF</color>
+    <color name="colorDekraOrange">#FFC107</color>
+    <color name="colorDekraYellow">#FFEB3B</color>
+    <color name="seekBarBackColor">#F0F0E4</color>
+    <color name="volumeBackColor">#DDE1E4</color>
+    <color name="colorYellowGrey">#D8D8D6</color>
+    <color name="colorGreenYellow">#E4E6D1</color>
+    <color name="colorRedGrey">#2B2B2B</color>
+
+
+</resources>

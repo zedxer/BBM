@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "1054403212829",
+    "firebase_url": "https://project-8127613492466856933.firebaseio.com",
+    "project_id": "project-8127613492466856933",
+    "storage_bucket": "project-8127613492466856933.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054403212829:android:bb53a47802772d6f",
+        "android_client_info": {
+          "package_name": "com.bebettermuslim"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1054403212829-hard942ep6t4np0r790k6l9ndk7k94pm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJ9xrlZagau5alvmtSezL9RhA6DqqCdH4"
+        },
+        {
+          "current_key": "AIzaSyBSsQ7q2ppAVoExUDMFTyN2ypeEQf8sX48"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054403212829:android:480c71eb74d93b9b",
+        "android_client_info": {
+          "package_name": "com.example.naqi.bebettermuslim"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1054403212829-4e0mavjp9msgp6rriiq0hcc7ncc9qts3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.naqi.bebettermuslim",
+            "certificate_hash": "4c2df1034744c35de3105fa18ed2dfc3cabc6071"
+          }
+        },
+        {
+          "client_id": "1054403212829-hard942ep6t4np0r790k6l9ndk7k94pm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJ9xrlZagau5alvmtSezL9RhA6DqqCdH4"
+        },
+        {
+          "current_key": "AIzaSyBSsQ7q2ppAVoExUDMFTyN2ypeEQf8sX48"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1054403212829-hard942ep6t4np0r790k6l9ndk7k94pm.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1054403212829-q4juqc48r5p5nebm3m4sho1lsenuf8oc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.BeBetterMuslim.teamofThree.iOS"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

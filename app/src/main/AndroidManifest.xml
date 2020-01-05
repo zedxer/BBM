@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.naqi.bebettermuslim">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+
+    <application
+            android:name=".BeBetterMuslim"
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity android:name=".activities.NaatActivity">
+        </activity>
+        <!--
+                <activity android:name=".activities.QuranActivity">
+        </activity>
+        -->
+        <service
+                android:name=".Service.AudioService"
+                android:enabled="true"
+                android:exported="true">
+        </service>
+
+        <!--<receiver-->
+                <!--android:name=".controllers.AlarmReceiver"-->
+                <!--android:enabled="false">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.BOOT_COMPLETED">-->
+                <!--</action>-->
+            <!--</intent-filter>-->
+        <!--</receiver> &lt;!&ndash; <receiver android:name=".activities.ActivityTest2$MediaReceiver"> &ndash;&gt;-->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MEDIA_BUTTON" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <!--<receiver-->
+                <!--android:name=".controllers.PrayerAlarmReceiver"-->
+                <!--android:enabled="true"-->
+                <!--android:exported="true"/>-->
+
+        <activity android:name=".activities.SettingsActivity">
+        </activity>
+        <activity android:name=".activities.AudioActivity"
+                  android:launchMode="singleTop">
+
+        </activity>
+        <activity
+                android:name=".activities.Test1Activity"
+                android:label="@string/title_activity_settings">
+        </activity>
+        <activity
+                android:name=".activities.MainActivity"
+                android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".activities.HomeActivity"
+                android:launchMode="singleTop">
+        </activity>
+        <activity
+                android:name=".setting_activities.Test2Settings"
+                android:theme="@style/Pref">
+        </activity>
+        <activity android:name=".setting_activities.QuranSettings"
+                  android:theme="@style/Pref">
+        </activity>
+
+
+        <activity android:name=".setting_activities.PrayerTimeSettings"
+                                   android:theme="@style/Pref">
+    </activity>
+        <activity android:name=".activities.QuranActivity">
+        </activity>
+
+        <receiver android:name=".controllers.NotificationPublisher"
+                  android:enabled="true" >
+            <intent-filter>
+                <action android:name="com.example.naqi.bebettermuslim.controllers.NotificationPublisher" >
+                </action>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

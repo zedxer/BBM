@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.SettingsActivity">
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarSettings"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:background="@color/colorPrimaryDark"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+    </android.support.v7.widget.Toolbar>
+    <FrameLayout android:id="@id/container"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 app:layout_constraintTop_toBottomOf="@id/toolbarSettings"
+                 app:layout_constraintEnd_toEndOf="parent"
+                 app:layout_constraintStart_toStartOf="parent">
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_settings_one">
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+                <RelativeLayout android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/color_settings_two">
+                    <TextView
+                            android:id="@+id/heading1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="General"
+                            style="@style/SettingsTextHeading"/>
+                </RelativeLayout>
+                <View android:id="@+id/headingView1"
+                      android:layout_width="match_parent"
+                      android:layout_height="1dp"
+                      android:background="@color/color_black"/>
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@color/color_settings_one"
+                        android:orientation="horizontal">
+                    <TextView android:layout_width="wrap_content"
+                              style="@style/SettingsTextItem"
+                              android:layout_height="wrap_content"
+                              android:text="Full Adhan"/>
+                    <Switch
+                            android:id="@+id/fullAdhanSwitch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        style="@style/SettingViewSubLine"
+                />
+                <RelativeLayout
+                        android:id="@+id/setLocationView"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@color/color_settings_one"
+
+                        android:orientation="horizontal">
+                    <TextView android:layout_width="wrap_content"
+                              style="@style/SettingsTextItem"
+                              android:layout_height="wrap_content"
+                              android:text="Set Locatiom"/>
+                    <TextView
+                            android:text="Location"
+                            style="@style/SettingsTextItem"
+                            android:textColor="@color/colorGray"
+                            android:id="@+id/setlocationText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        style="@style/SettingViewSubLine"
+                />
+                <RelativeLayout
+                        android:id="@+id/preNamazAlarmView"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@color/color_settings_one"
+                        android:orientation="horizontal">
+                    <TextView android:layout_width="wrap_content"
+                              style="@style/SettingsTextItem"
+                              android:layout_height="wrap_content"
+                              android:text="Pre Namaz Alarm Tone"/>
+                    <ImageView
+                            android:text="Location"
+                            style="@style/SettingsTextItem"
+                            android:src="@drawable/ic_keyboard_arrow_right_gray_24dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        style="@style/SettingViewSubLine"/>
+                <RelativeLayout
+                        android:id="@+id/quranSettingView"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@color/color_settings_one"
+
+                        android:orientation="horizontal">
+                    <TextView android:layout_width="wrap_content"
+                              style="@style/SettingsTextItem"
+                              android:layout_height="wrap_content"
+                              android:text="Quran Settings"/>
+                    <ImageView
+                            android:text="Location"
+                            style="@style/SettingsTextItem"
+                            android:src="@drawable/ic_keyboard_arrow_right_gray_24dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        style="@style/SettingViewHeadLine"/>
+                <RelativeLayout android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/color_settings_two">
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="prayer times"
+                              style="@style/SettingsTextHeading"/>
+                </RelativeLayout>
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        style="@style/SettingViewHeadLine"
+                />
+                <RelativeLayout
+                        android:id="@+id/tfourhourView"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@color/color_settings_one"
+
+                        android:orientation="horizontal">
+                    <TextView android:layout_width="wrap_content"
+                              style="@style/SettingsTextItem"
+                              android:layout_height="wrap_content"
+                              android:text="24-Hour Time Format"/>
+                    <Switch
+                            android:id="@+id/tfourHourSwitch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        style="@style/SettingViewSubLine"
+                />
+                <RelativeLayout
+                        android:id="@+id/calAutoView"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@color/color_settings_one"
+
+                        android:orientation="horizontal">
+                    <TextView android:layout_width="wrap_content"
+                              style="@style/SettingsTextItem"
+                              android:layout_height="wrap_content"
+                              android:text="Calculate Automatically"/>
+                    <Switch
+                            android:id="@+id/calAutoSwitch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        style="@style/SettingViewSubLine"
+                />
+                <RelativeLayout
+                        android:id="@+id/calMethodView"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@color/color_settings_one"
+
+                        android:orientation="horizontal">
+                    <TextView android:layout_width="wrap_content"
+                              style="@style/SettingsTextItem"
+                              android:layout_height="wrap_content"
+                              android:text="Calculation Methods"/>
+                    <TextView
+                            android:text="Jafari"
+                            style="@style/SettingsTextItem"
+                            android:textColor="@color/colorGray"
+                            android:id="@+id/calMethodText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        style="@style/SettingViewSubLine"
+                />
+                <RelativeLayout
+                        android:id="@+id/JurMethodView"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@color/color_settings_one"
+
+                        android:orientation="horizontal">
+                    <TextView android:layout_width="wrap_content"
+                              style="@style/SettingsTextItem"
+                              android:layout_height="wrap_content"
+                              android:text="Juristic Methods"/>
+                    <TextView
+                            android:text="Standard"
+                            style="@style/SettingsTextItem"
+                            android:textColor="@color/colorGray"
+                            android:id="@+id/jusristicText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        style="@style/SettingViewSubLine"
+                />
+                <RelativeLayout
+                        android:id="@+id/highLatView"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@color/color_settings_one"
+
+                        android:orientation="horizontal">
+                    <TextView android:layout_width="wrap_content"
+                              style="@style/SettingsTextItem"
+                              android:layout_height="wrap_content"
+                              android:text="High Latitude Adjustment"/>
+                    <TextView
+                            android:text="None"
+                            style="@style/SettingsTextItem"
+                            android:textColor="@color/colorGray"
+                            android:id="@+id/highLatAdjText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        style="@style/SettingViewHeadLine"
+                />
+                <RelativeLayout android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/color_settings_two">
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="others"
+                              style="@style/SettingsTextHeading"/>
+                </RelativeLayout>
+
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        style="@style/SettingViewHeadLine"
+                />
+
+                <RelativeLayout
+                        android:id="@+id/faqView"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@color/color_settings_one"
+
+                        android:orientation="horizontal">
+                    <TextView android:layout_width="wrap_content"
+                              style="@style/SettingsTextItem"
+                              android:layout_height="wrap_content"
+                              android:text="FAQs"/>
+
+                </RelativeLayout>
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        style="@style/SettingViewSubLine"
+                />
+
+                <RelativeLayout
+                        android:id="@+id/feedBackView"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@color/color_settings_one"
+
+                        android:orientation="horizontal">
+                    <TextView android:layout_width="wrap_content"
+                              style="@style/SettingsTextItem"
+                              android:layout_height="wrap_content"
+                              android:text="Feedback"/>
+
+                </RelativeLayout>
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        style="@style/SettingViewSubLine"
+                />
+
+                <RelativeLayout
+
+                        android:id="@+id/shareAppView"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@color/color_settings_one"
+
+                        android:orientation="horizontal">
+                    <TextView android:layout_width="wrap_content"
+                              style="@style/SettingsTextItem"
+                              android:layout_height="wrap_content"
+                              android:text="Share App"/>
+
+                </RelativeLayout>
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+
+                        style="@style/SettingViewSubLine"
+                />
+
+                <RelativeLayout
+                        android:id="@+id/rateAppView"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@color/color_settings_one"
+
+                        android:orientation="horizontal">
+                    <TextView android:layout_width="wrap_content"
+                              style="@style/SettingsTextItem"
+                              android:layout_height="wrap_content"
+                              android:text="Rate Our App"/>
+
+                </RelativeLayout>
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        style="@style/SettingViewSubLine"
+                />
+
+                <RelativeLayout
+                        android:id="@+id/policyView"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@color/color_settings_one"
+
+                        android:orientation="horizontal">
+                    <TextView android:layout_width="wrap_content"
+                              style="@style/SettingsTextItem"
+                              android:layout_height="wrap_content"
+                              android:text="Policy"/>
+
+                </RelativeLayout>
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginBottom="@dimen/dimen_small"
+                        style="@style/SettingViewSubLine"
+
+                />
+            </LinearLayout>
+
+
+        </ScrollView>
+    </FrameLayout>
+</android.support.constraint.ConstraintLayout>

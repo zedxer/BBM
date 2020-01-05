@@ -1,0 +1,50 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:id="@+id/prayerTimeLayout"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+>
+
+    <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:maxHeight="25dp"
+            android:maxWidth="25dp"
+            android:minHeight="25dp"
+            android:minWidth="25dp"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:id="@+id/alarm_button_listview"
+            android:src="@drawable/alarm_with_notification"
+            android:background="@null"
+            android:layout_gravity="center_vertical"
+    />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/prayer_name"
+            android:textSize="18dp"
+            android:textColor="#001D35"
+            android:paddingLeft="13dp"
+            android:text="Fajar"
+    />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/prayer_timings"
+            android:textSize="18dp"
+            android:textColor="#001D35"
+            android:paddingRight="10dp"
+            android:text="00:00 PM"
+    />
+
+</LinearLayout>

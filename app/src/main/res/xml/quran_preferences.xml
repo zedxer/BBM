@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+            android:title="TRANSLATION"
+            android:key="translation_settings">
+
+        <SwitchPreference
+                android:title="Translation"
+                android:defaultValue="false"
+                android:key="TRANSLATION_STATE"
+        />
+
+        <ListPreference
+                android:title="Translation Languages"
+                android:summary="%s"
+                android:key="TRANSLATION_LANGUAGE"
+                android:entries="@array/language_names"
+                android:entryValues="@array/language_names"
+                android:defaultValue="Urdu"
+
+        />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+            android:title="AUDIO"
+            android:key="translation_settings">
+
+        <ListPreference android:key="RECITER"
+                        android:title="Select Reciter"
+                        android:entries="@array/quran_reciter_name"
+                        android:entryValues="@array/quran_reciter_value"
+                        android:defaultValue="AbdulRahman"
+                        android:summary="%s"
+        />
+
+        <SwitchPreference
+                android:title="Auto Scroll"
+                android:defaultValue="true"
+                android:key="SCROLL_STATE"
+        />
+
+        <SwitchPreference
+                android:title="Keep Screen On"
+                android:defaultValue="true"
+                android:key="SCREEN_STATE"
+        />
+
+    </PreferenceCategory>
+
+
+
+
+</PreferenceScreen>

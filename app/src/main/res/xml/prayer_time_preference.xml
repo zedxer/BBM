@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen  xmlns:android="http://schemas.android.com/apk/res/android"
+                   android:title="Prayer Time Settings"
+                   android:key="PRAYER_TIMING"
+                   android:orderingFromXml="true"
+                   android:icon="@drawable/ic_keyboard_arrow_right_gray_24dp">
+
+    <ListPreference
+            android:title="Prayer Time Conventions"
+            android:summary="%s"
+            android:key="CALCULATION_METHOD"
+            android:entries="@array/calculation_method_name"
+            android:entryValues="@array/calculation_method_value"
+            android:defaultValue="0"/>
+
+    <ListPreference
+            android:title="Hide Latitude Adjustment"
+            android:summary="%s"
+            android:key="HIGH_LATITUDE_ADJUSTMENT"
+            android:entries="@array/high_latitude_adjustments"
+            android:entryValues="@array/high_latitude_adjustments_values"
+            android:defaultValue="3"/>
+
+    <ListPreference
+            android:title="Asr Calculation - Juristic method"
+            android:summary="%s"
+            android:key="ASR_JURISTIC"
+            android:entries="@array/juristic_method_name"
+            android:entryValues="@array/juristic_method_values"
+            android:defaultValue="0"/>
+
+    <ListPreference
+            android:title="Time Format"
+            android:summary="%s"
+            android:key="TIME_FORMAT"
+            android:entries="@array/time_format_name"
+            android:entryValues="@array/time_format_values"
+            android:defaultValue="1"/>
+
+</PreferenceScreen>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+            android:id="@+id/naat_artist"
+            android:icon="@drawable/selector_naat_artist"
+            android:title="@string/artist"
+            app:itemTextColor="@color/naat_menu_color"
+            app:showAsAction="ifRoom" />
+    <item
+            android:id="@+id/naat_playlist"
+            android:icon="@drawable/selector_naat_playlist"
+            android:title="@string/playlist"
+            app:itemTextColor="@color/naat_menu_color"
+            app:showAsAction="ifRoom" />
+    <item
+            android:id="@+id/home_action"
+            android:enabled="true"
+            android:icon="@drawable/selector_naat_fav"
+            android:title="@string/favorite"
+            app:itemTextColor="@color/naat_menu_color"
+            app:showAsAction="ifRoom" />
+
+    <!--app:showAsAction="ifRoom" />-->
+</menu>

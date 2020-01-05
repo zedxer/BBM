@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AlbumNameCell"
+        android:background="@color/colorBlueGray"
+        android:orientation="vertical">
+    <TextView
+            android:id="@+id/seeAllNaat"
+            android:text="@string/show_all_naats"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/textsize_normal"
+            android:drawablePadding="@dimen/dimen_small"
+            android:drawableStart="@drawable/all_naat"
+    />
+</LinearLayout>

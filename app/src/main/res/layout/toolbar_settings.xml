@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+                                   android:layout_width="match_parent"
+                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                   android:id="@+id/toolbarSettings"
+                                   style="@style/Pref"
+                                   android:layout_height="?actionBarSize"
+                                   app:titleTextColor="@color/colorWhite"
+                                   android:background="@color/colorAccent">
+
+</android.support.v7.widget.Toolbar>

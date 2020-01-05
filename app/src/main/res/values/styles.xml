@@ -1,0 +1,122 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:typeface">serif</item>
+        <!--<item name="android:statusBarColor">@android:color/transparent</item>-->
+        <!--<item name="android:navigationBarColor">@android:color/transparent</item>-->
+        <!--<item name="android:windowTranslucentStatus">true</item>-->
+        <!--<item name="android:windowTranslucentNavigation">true</item>-->
+    </style>
+
+    <style name="Widget.BottomNavigationView"
+           parent="Widget.Design.BottomNavigationView">
+        <item name="fontPath">fonts/gothic.TTF</item>
+        <item name="android:fontFamily">fonts/gothic.TTF</item>
+    </style>
+    <style name="SettingsTextItem" parent="">
+        <item name="android:textSize">@dimen/textsize_normal</item>
+        <item name="android:textColor">@color/color_black</item>
+        <item name="android:padding">@dimen/dimen_small</item>
+    </style>
+    <style name="SettingsTextHeading" parent="">
+        <item name="android:textColor">@color/colorDarkGray</item>
+        <item name="android:paddingTop">@dimen/dimen_small</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">@dimen/textsize_small</item>
+        <item name="android:padding">@dimen/dimen_small</item>
+    </style>
+    <style name="SettingViewSubLine" parent="">
+        <item name="android:height">0.5dp</item>
+        <item name="android:background">@color/colorDarkGray</item>
+        <item name="android:layout_marginEnd">10dp</item>
+        <item name="android:layout_marginStart">10dp</item>
+    </style>
+    <style name="SettingViewHeadLine" parent="">
+        <item name="android:height">1dp</item>
+        <item name="android:background">@color/colorDarkGray</item>
+    </style>
+    <!--  <style name="AppTheme.Settings" parent="AppTheme">
+          <item name="windowNoTitle">false</item>
+          <item name="windowActionBar">true</item>
+      </style>
+  -->
+
+    <style name="Pref" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:icon">@drawable/ic_keyboard_arrow_right_gray_24dp</item>
+        <!--<item name="actionBarStyle">@style/ToolbarTheme</item>-->
+    </style>
+
+    <style name="ToolbarTheme" parent="Base.V7.Widget.AppCompat.Toolbar">
+        <item name="android:title">Settings</item>
+        <item name="android:navigationIcon">@drawable/ic_keyboard_arrow_right_gray_24dp</item>
+    </style>
+
+    <!--ExoPlayer Styles-->
+    <style name="ExoMediaButton">
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:layout_width">@dimen/exo_media_button_width</item>
+        <item name="android:layout_height">@dimen/exo_media_button_height</item>
+    </style>
+    <style name="ExoMediaButton.FastForward">
+        <item name="android:src">@drawable/naat_forward</item>
+        <item name="android:contentDescription">@string/exo_controls_fastforward_description</item>
+    </style>
+    <style name="ExoMediaButton.Next">
+        <item name="android:src">@drawable/naat_next</item>
+        <item name="android:contentDescription">@string/exo_controls_next_description</item>
+    </style>
+    <style name="ExoMediaButton.Pause">
+        <item name="android:src">@drawable/naat_pause</item>
+        <item name="android:contentDescription">@string/exo_controls_pause_description</item>
+    </style>
+    <style name="ExoMediaButton.Play">
+        <item name="android:src">@drawable/naat_play</item>
+        <item name="android:contentDescription">@string/exo_controls_play_description</item>
+    </style>
+    <style name="ExoMediaButton.Previous">
+        <item name="android:src">@drawable/naat_previous</item>
+        <item name="android:contentDescription">@string/exo_controls_previous_description</item>
+    </style>
+    <style name="ExoMediaButton.Rewind">
+        <item name="android:src">@drawable/naat_rewind</item>
+        <item name="android:contentDescription">@string/exo_controls_rewind_description</item>
+    </style>
+    <style name="ExoMediaButton.Shuffle">
+        <item name="android:src">@drawable/exo_controls_shuffle</item>
+        <item name="android:contentDescription">@string/exo_controls_shuffle_description</item>
+    </style>
+
+    <style name="AlbumNameCell">
+        <item name="android:paddingTop">@dimen/dimen_normal_medium</item>
+        <item name="android:paddingBottom">@dimen/dimen_normal_medium</item>
+        <item name="android:paddingStart">@dimen/dimen_x_large</item>
+        <item name="android:paddingEnd">@dimen/dimen_x_large</item>
+    </style>
+<!--meter picker styles test-->
+
+    <style name="MeterNumberPickerStyle">
+        <item name="mnp_min">0</item>
+        <item name="mnp_max">9</item>
+        <item name="mnp_textColor">@android:color/white</item>
+        <item name="mnp_textSize">50sp</item>
+        <item name="mnp_paddingHorizontal">5dp</item>
+        <item name="mnp_paddingVertical">25dp</item>
+    </style>
+    <style name="MeterViewStyle">
+        <item name="mv_firstColor">@android:color/black</item>
+        <item name="mv_numberOfFirst">5</item>
+        <item name="mv_numberOfSecond">1</item>
+        <item name="mv_pickerStyle">@style/MeterNumberPickerStyle</item>
+        <item name="mv_secondColor">@android:color/holo_red_dark</item>
+    </style>
+</resources>

@@ -1,0 +1,174 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/quranToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:translationZ="5dp"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:titleMarginStart="32dp" />
+
+
+    <ImageView
+            android:id="@+id/border_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/quranToolbar"
+            android:scaleType="fitXY"
+            android:src="@drawable/left_border_xml" />
+
+
+    <com.example.naqi.bebettermuslim.views.MyRecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/quranToolbar"
+            android:layout_toEndOf="@id/border_left"
+            android:layout_alignParentBottom="true"
+            android:layout_toStartOf="@+id/border_right" />
+
+    <ImageView
+            android:id="@+id/border_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/quranToolbar"
+            android:scaleType="fitXY"
+            android:src="@drawable/right_border_xml" />
+
+    <RelativeLayout
+            android:id="@+id/openSoundOptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:translationZ="5dp">
+
+        <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="5dp"
+                android:src="@drawable/swipeup" />
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_alignBottom="@+id/imageView2"
+                android:background="#001D35" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/soundOptionsMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#001D35"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:translationZ="5dp"
+            android:visibility="gone">
+
+        <LinearLayout
+                android:id="@+id/player_buttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+            <ImageButton
+                    android:id="@+id/previousButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:padding="10dp"
+                    android:src="@drawable/backward" />
+
+            <ImageButton
+                    android:id="@+id/playButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:padding="10dp"
+                    android:src="@drawable/play" />
+
+            <ImageButton
+                    android:id="@+id/nextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:padding="10dp"
+                    android:src="@drawable/forward" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/player_buttons">
+
+            <ImageButton
+                    android:id="@+id/sound_options_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginRight="40dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:padding="10dp"
+                    android:src="@drawable/sound_setting" />
+
+
+            <ImageView
+                    android:id="@+id/low_sound_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/sound_options_btn"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/volumeSeekBar"
+                    android:layout_toStartOf="@+id/volumeSeekBar"
+                    android:src="@drawable/volume_low" />
+
+
+            <SeekBar
+                    android:id="@+id/volumeSeekBar"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:indeterminate="false"
+                    android:progress="100" />
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/volumeSeekBar"
+                    android:layout_toRightOf="@+id/volumeSeekBar"
+                    android:src="@drawable/volume_high" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <xyz.danoz.recyclerviewfastscroller.vertical.VerticalRecyclerViewFastScroller
+            android:id="@+id/fast_scroller"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_alignEnd="@+id/recyclerView"
+            android:layout_alignRight="@+id/recyclerView"
+            android:layout_alignTop="@+id/recyclerView"
+            android:paddingBottom="10dp" />
+
+</RelativeLayout>

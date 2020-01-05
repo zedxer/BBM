@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:app="http://schemas.android.com/apk/res-auto"
+                  android:layout_width="wrap_content">
+    <PreferenceCategory android:title="GENERAL">
+
+        <Preference
+                android:title="Prayer Time Settings"
+                android:key="PRAYER_TIMING"
+                android:orderingFromXml="true"
+                android:icon="@drawable/ic_keyboard_arrow_right_gray_24dp"/>
+
+
+        <Preference android:key="QURAN_SETTINGS"
+                    android:title="Quran Settings"
+        />
+
+        <Preference android:key="ADDRESS"
+                    android:title="Set Location"
+        />
+
+        <ListPreference
+                android:key="ALARM_TONE"
+                android:title="Change Alarm Tone"
+                android:summary="%s"
+                android:entries="@array/alarm_tone_name"
+                android:entryValues="@array/alarm_tone_values"
+                android:defaultValue="pre_azan_alarm_tone"
+        />
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="OTHERS">
+
+        <Preference
+                android:key="SHARE"
+                android:title="Share Our App"
+        />
+
+        <Preference
+                android:key="RATE"
+                android:title="Rate Our App"
+        />
+        <Preference
+                android:key="FEEDBACK"
+                android:title="Feedback"
+        />
+        <Preference
+                android:key="ABOUT"
+                android:title="About us"
+        />
+
+
+    </PreferenceCategory>
+
+
+    <!--<PreferenceCategory>-->
+
+    <!--&lt;!&ndash;<Preference android:title="Feedback" >&ndash;&gt;-->
+    <!--&lt;!&ndash;<intent android:action="android.intent.action.SEND"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:mimeType="text/plain"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:data="ibebettermuslimslim.com" />&ndash;&gt;-->
+    <!--&lt;!&ndash;</Preference>&ndash;&gt;-->
+
+    <!--</PreferenceCategory>-->
+
+
+</PreferenceScreen>

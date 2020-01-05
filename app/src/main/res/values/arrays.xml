@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="drawer_drawables">
+        <item>@drawable/quran_no_fill</item>
+        <item>@drawable/naat_no_fill</item>
+        <item>@drawable/alarm_no_fill</item>
+        <item>@drawable/praytime_no_fill</item>
+        <item>@drawable/qibla_no_fill</item>
+        <item>@drawable/tasbeeh_no_fill</item>
+        <item>@drawable/salattracker_no_fill</item>
+        <item>@drawable/library_no_fill</item>
+        <item>@drawable/settings_no_fill</item>
+    </string-array>
+    <string-array name="prayer_time_images">
+        <item>@drawable/background_fajar</item>
+        <item>@drawable/background_dhuhar</item>
+        <item>@drawable/background_dhuhar</item>
+        <item>@drawable/background_asar</item>
+        <item>@drawable/background_magrib</item>
+        <item>@drawable/background_magrib</item>
+        <item>@drawable/background_isha</item>
+        <item>@drawable/background_fajar</item>
+        <item>@drawable/background_dhuhar</item>
+        <item>@drawable/background_dhuhar</item>
+        <item>@drawable/background_asar</item>
+        <item>@drawable/background_magrib</item>
+        <item>@drawable/background_magrib</item>
+        <item>@drawable/background_isha</item>
+    </string-array>
+
+    <string-array name="drawer_items">
+
+        <item>Quran</item>
+        <item>Naats</item>
+        <item>Alarms</item>
+        <item>Pray Times</item>
+        <item>Qibla Direction</item>
+        <item>Tasbeh Counter</item>
+        <item>Salah Tracker</item>
+        <item>Library</item>
+        <item>Settings</item>
+
+    </string-array>
+
+    <string-array name="language_names">
+        <item>English</item>
+        <item>Urdu</item>
+        <item>Dutch</item>
+        <item>Czech</item>
+        <item>Bengali</item>
+        <item>German</item>
+        <item>Spanish</item>
+        <item>Hindi</item>
+        <item>Japanese</item>
+        <item>Korean</item>
+        <item>Malayalam</item>
+        <item>Polish</item>
+        <item>Portuguese</item>
+        <item>Romanian</item>
+        <item>Russian</item>
+        <item>Somali</item>
+        <item>Swedish</item>
+        <item>Swahili</item>
+        <item>Tamil</item>
+        <item>Tajik</item>
+        <item>Thai</item>
+        <item>Turkish</item>
+        <item>Uzbek</item>
+        <item>Chinese</item>
+        <item>French</item>
+        <item>Czech</item>
+    </string-array>
+
+    <string-array name="calculation_method_name">
+        <item>Muslim World League</item>
+        <item>Islamic Society of North America</item>
+        <item>Egyptian General Authority of Survey</item>
+        <item>Umm al-Qura University, Makkah</item>
+        <item>University of Islamic Sciences, Karachi</item>
+        <item>Institute of Geophysics, University of Tehran</item>
+        <item>Shia Ithna Ashari (Ja`fari)</item>
+    </string-array>
+
+    <string-array name="calculation_method_value">
+        <item>3</item>
+        <item>2</item>
+        <item>5</item>
+        <item>4</item>
+        <item>1</item>
+        <item>6</item>
+        <item>0</item>
+    </string-array>
+
+    <string-array name="high_latitude_adjustments">
+        <item>Angle based method (Recommended)</item>
+        <item>Middle of the night</item>
+        <item>1/7th of the night</item>
+        <item>None</item>
+    </string-array>
+
+    <string-array name="high_latitude_adjustments_values">
+        <item>3</item>
+        <item>1</item>
+        <item>2</item>
+        <item>0</item>
+    </string-array>
+
+    <string-array name="juristic_method_name">
+        <item>Shafii (standard)</item>
+        <item>Hanafi</item>
+    </string-array>
+
+    <string-array name="juristic_method_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="time_format_name">
+        <item>24-hour format</item>
+        <item>12-hour format</item>
+        <item>12-hour format (no suffix)</item>
+    </string-array>
+
+    <string-array name="time_format_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="alarm_tone_name">
+        <item>Alarm Tone 1</item>
+        <item>Alarm Tone 2</item>
+    </string-array>
+
+    <string-array name="alarm_tone_values">
+        <item>pre_azan_alarm_tone</item>
+        <item>azan</item>
+    </string-array>
+
+    <string-array name="quran_reciter_name">
+        <item>Abdul Rahman Al-Sudais</item>
+        <item>Salah Bukhatir</item>
+        <item>Saud Al-Shuraim</item>
+    </string-array>
+
+    <string-array name="quran_reciter_value">
+        <item>AbdulRahman</item>
+        <item>Salah</item>
+        <item>Saood</item>
+    </string-array>
+
+
+
+
+
+</resources>

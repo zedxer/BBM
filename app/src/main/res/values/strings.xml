@@ -1,0 +1,118 @@
+<resources>
+    <string name="app_name">Be Better Muslim</string>
+    <string name="regular_font">fonts/gothic.TTF</string>
+    <string name="bold_font">fonts/gothic-b.TTF</string>
+    <string name="bold_italic_font">fonts/gothic-b-i.TTF</string>
+    <string name="italic_font">fonts/gothic-i.TTF</string>
+    <string name="quran_regular_font">fonts/pdms-saleem-quranfont-signed.ttf</string>
+    <string name="aldhabi_font">fonts/aldhabi.ttf</string>
+    <string name="angles_font">fonts/angles.ttf</string>
+    <string name="asunaskh_font">fonts/asunaskh.ttf</string>
+    <string name="bracket_font">fonts/bracket.ttf</string>
+    <string name="jameel_noori_nastaleeq_font">fonts/jameel-noori-nastaleeq.ttf</string>
+    <string name="noorehira_font">fonts/noorehira.ttf</string>
+    <string name="pak_nastaleeq_font">fonts/pak-nastaleeq.ttf</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact based on your message
+        history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value"/>
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="namaz_timing_title">Prayer Time</string>
+    <string name="namaz_timing_body">It is time for Prayers</string>
+
+    <!--localization strings-->
+
+    <!--Quran settings strings-->
+    <string name="translation_string">Translation</string>
+    <string name="select_lang_string">Select Language</string>
+    <string name="bookmark_string">Bookmarks</string>
+    <string name="manage_bookmark_string">Manage Bookmark</string>
+    <string name="audio_string">Audio</string>
+    <string name="more_audio_options_string">More Audio Options</string>
+    <string name="auto_scroll_string">Auto Scroll</string>
+    <string name="keep_screen_on_string">Keep Screen On</string>
+    <string name="reciters_string">Reciters</string>
+    <string name="show_all_naats">Show All Naats</string>
+    <string name="artist">Artist</string>
+    <string name="playlist">Playlist</string>
+    <string name="favorite">Favorite</string>
+    <string name="add_playlist">Add Playlist</string>
+    <string name="playlist_name_hint">Playlist name</string>
+    <string name="playlist_color_tag">Playlist color tag:</string>
+    <string name="delete">Delete</string>
+    <string name="playback_channel_name">Playback</string>
+
+</resources>

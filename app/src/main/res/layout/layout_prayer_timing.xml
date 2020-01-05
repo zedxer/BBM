@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+            android:id="@+id/timingsLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+        <TextView
+                android:id="@+id/prayerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:text="Dhahur"
+                android:textColor="#ffffff"
+                android:textIsSelectable="false"
+
+                android:textSize="30sp"/>
+
+        <TextView
+                android:id="@+id/prayerTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:text="01:00 pm"
+                android:textColor="#ffffff"
+                android:textSize="40sp"/>
+
+        <TextView
+                android:id="@+id/remainingTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:text="00:00:00"
+                android:textColor="#ffffff"
+                android:textSize="25sp"
+
+        />
+    </LinearLayout>
+
+</LinearLayout>

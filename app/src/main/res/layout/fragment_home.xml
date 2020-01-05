@@ -1,0 +1,162 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/backgroundLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:fitsSystemWindows="true">
+    <android.support.v4.view.ViewPager
+            android:id="@+id/backgroundImagePager"
+            android:adjustViewBounds="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:gravity="center|top"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha="0.5"
+                android:background="@android:color/black"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="15dp">
+
+            <TextView
+                    android:id="@+id/dateView"
+                    fontPath="fonts/gothic-i.TTF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingBottom="5dp"
+                    android:text="August 15, 2015"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"/>
+
+            <TextView
+                    android:id="@+id/islamicDateView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="7dp"
+                    android:text="Rajab 8, 1436"
+                    android:textColor="#ffffff"
+                    android:textSize="23sp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp">
+
+
+
+            <ImageButton
+                    android:id="@+id/noAlarmButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:adjustViewBounds="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:maxHeight="60dp"
+                    android:maxWidth="60dp"
+                    android:minHeight="60dp"
+                    android:minWidth="60dp"
+                    android:padding="15dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/noalarm_no_fill"/>
+            <ImageButton
+                    android:id="@+id/notifyButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:adjustViewBounds="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:maxHeight="60dp"
+                    android:maxWidth="60dp"
+                    android:minHeight="60dp"
+                    android:minWidth="60dp"
+                    android:padding="15dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/no_notify_no_fill"/>
+            <ImageButton
+                    android:id="@+id/alarmButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:maxHeight="60dp"
+                    android:maxWidth="60dp"
+                    android:minHeight="60dp"
+                    android:minWidth="60dp"
+                    android:padding="15dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/alarm_sound_fill"/>
+        </LinearLayout>
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <android.support.v4.view.ViewPager
+                    android:id="@+id/prayerTimingPager"
+                    android:layout_width="match_parent"
+                    android:visibility="visible"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_height="wrap_content"/>
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:layout_alignParentBottom="true"
+                    android:paddingRight="15dp"
+                    android:paddingTop="10dp">
+
+                <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                    <ImageButton
+                            android:id="@+id/settingsBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:maxHeight="60dp"
+                            android:maxWidth="60dp"
+                            android:minHeight="60dp"
+                            android:minWidth="60dp"
+                            android:padding="15dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/setting_fill"/>
+
+                </LinearLayout>
+
+
+                <ImageButton
+                        android:id="@+id/slideMenuBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:maxHeight="60dp"
+                        android:maxWidth="60dp"
+                        android:minHeight="60dp"
+                        android:minWidth="60dp"
+                        android:padding="15dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/main_menu_btn"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

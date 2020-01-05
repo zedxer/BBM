@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/mainLayout"
+              android:background="@color/colorWhite"
+              android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="20dp">
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+            <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Beep after"
+                    fontPath="fonts/gothic.TTF"
+                    android:id="@+id/beepAfterCheck"
+                    android:checked="false"
+                    android:textSize="15sp"
+                    android:textColor="#000"/>
+
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="2"
+                    android:id="@+id/editText"
+                    android:hint="0"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="13sp"
+                    android:textColor="#001D35"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:background="@drawable/tasbeeh_counter_limit"
+                    android:enabled="false"/>
+        </LinearLayout>
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Minus One"
+                android:id="@+id/minusOneBtn"
+                fontPath="fonts/gothic.TTF"
+                android:onClick="decreaseCounter"
+                android:textColor="#ffffff"
+                android:background="@drawable/rounded_borders"/>
+
+    </LinearLayout>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:text="0"
+            fontPath="fonts/gothic-b.TTF"
+            android:gravity="center"
+            android:textSize="120sp"
+            android:id="@+id/counterTextView"
+            android:textColor="#001D35"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="20dp"
+            android:paddingTop="10dp"
+            android:gravity="end">
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Reset"
+                fontPath="fonts/gothic.TTF"
+                android:id="@+id/resetBtn"
+                android:onClick="resetCounter"
+                android:textColor="#ffffff"
+                android:background="@drawable/rounded_borders"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
