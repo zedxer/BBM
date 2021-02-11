@@ -486,14 +486,14 @@ class HomeActivity : CustomActivity(), NavAdapter.OnItemClickListener {
             }
 
             override fun onResponse(call: Call<LanguageResponse>, response: Response<LanguageResponse>) {
-                if (!response.body()?.error!!) {
+//                if (!response.body()?.error!!) {
                     response.body()?.let {
                         languageManager.updateAllObjectsInDatabase(it.languages!!.toList())
                         Toast.makeText(applicationContext, "FAILED", Toast.LENGTH_SHORT).show()
 //                                    Toast.makeText(applicationContext, languageManager.getAllObjectsFromDatabase().toString(), Toast.LENGTH_SHORT).show()
                         Log.v("TAG_ME", languageManager.getAllObjectsFromDatabase().toString())
                     }
-                }
+//                }
             }
 
         })
